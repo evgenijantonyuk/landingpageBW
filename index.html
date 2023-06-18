@@ -14,35 +14,33 @@
 <body>
 <header class="header">
 	<div class="container">
-		<nav>
+		<nav class="menu__desktop">
 			<ul class="menu">
-				<li class="menu__item active"><a href="#">
-					Home
-				</a></li>
-				
-				<li class="menu__item"><a href="#">
-					About Us
-				</a></li>
-				
-				<li class="menu__item"><a href="#">
-					Team
-				</a></li>
-				
+				<li class="menu__item active"><a href="#">Home</a></li>
+				<li class="menu__item"><a href="#about">About Us</a></li>
+				<li class="menu__item"><a href="#team">Team</a></li>
 				<li class="menu__item "><a href="#">
 					<img src="img/logo.png" alt="Лого" class="logo">
 				</a></li>
-				
-				<li class="menu__item"><a href="#">
-					Services
-				</a></li>
-				
-				<li class="menu__item"><a href="#">
-					Blog
-				</a></li>
-				
-				<li class="menu__item"><a href="#">
-					Contact Us
-				</a></li>
+				<li class="menu__item"><a href="#provide">Services</a></li>
+				<li class="menu__item"><a href="#">Blog</a></li>
+				<li class="menu__item"><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<nav class="menu__mobile">
+			<div class="menu__inner">
+				<a href="#"><img alt="Лого" class="logo" src="img/logo.png"></a>
+				<div class="menu__burger"><span>toggle menu</span></div>
+			</div>
+			
+			<ul class="menu">
+				<li class="menu__item active"><a href="#">Home</a></li>
+				<li class="menu__item"><a href="#about">About Us</a></li>
+				<li class="menu__item"><a href="#team">Team</a></li>
+				<li class="menu__item"><a href="#provide">Services</a></li>
+				<li class="menu__item"><a href="#">Blog</a></li>
+				<li class="menu__item"><a href="#contact">Contact Us</a></li>
 			</ul>
 		</nav>
 		
@@ -54,7 +52,7 @@
 	</div>
 </header>
 
-<div class="about">
+<div class="about" id="about">
 	<div class="container">
 		<div class="about__inner">
 			<div class="about__item">
@@ -87,7 +85,7 @@
 	</div>
 </div>
 
-<div class="team">
+<div class="team" id="team">
 	<div class="container">
 		<div class="block__head">
 			<h2 class="block__title">This is our team</h2>
@@ -123,78 +121,82 @@
 			</div>
 		</div>
 	</div>
-	
-	<div class="provide">
-		<div class="container">
-			<div class="block__head inverse">
-				<h2 class="block__title">We provide you everything</h2>
-				<p class="block__text">Maybe not everything, but we provide you some stuff.</p>
-			</div>
-			<div class="provide__inner">
-				<div class="provide__item">
-					<i class="icon-chart-line"></i>
-					<h3 class="provide__item-title">Some Analytics</h3>
-					<p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada
-						justo</p>
-				</div>
-				<div class="provide__item">
-					<i class="icon-heart-empty"></i>
-					<h3 class="provide__item-title">We provide you love</h3>
-					<p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada
-						justo</p>
-				</div>
-				<div class="provide__item">
-					<i class="icon-publish"></i>
-					<h3 class="provide__item-title">And Some Cloud</h3>
-					<p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada
-						justo</p>
-				</div>
-			</div>
+</div>
+
+<div class="provide" id="provide">
+	<div class="container">
+		<div class="block__head inverse">
+			<h2 class="block__title">We provide you everything</h2>
+			<p class="block__text">Maybe not everything, but we provide you some stuff.</p>
 		</div>
-	</div>
-	
-	<div class="contact">
-		<div class="container">
-			<div class="block__head">
-				<h2 class="block__title">Contact Us</h2>
-				<p class="block__text">We know what we need to do</p>
+		<div class="provide__inner">
+			<div class="provide__item">
+				<i class="icon-chart-line"></i>
+				<h3 class="provide__item-title">Some Analytics</h3>
+				<p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada
+					justo</p>
 			</div>
-			<div class="contact__inner">
-				<div class="contact__icon-box">
-					<div class="contact__item">
-						<i class="icon-phone"></i>
-						<div class="contact__text"><a href="tel:555222333">555-222-333</a></div>
-					</div>
-					<div class="contact__item">
-						<i class="icon-location"></i>
-						<div class="contact__text"><a
-								href="https://www.google.com/maps/place/%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D0%B0+%C2%AB%D0%91%D0%B0%D1%80%D0%BD%D0%B0%D1%83%D0%BB%C2%BB/@53.3443723,83.7207879,14.11z/data=!4m9!3m8!1s0x42dda45d37ef3ab9:0x9479ac28f423d633!5m2!4m1!1i2!8m2!3d53.3473778!4d83.7623062!16s%2Fg%2F11g_t27yd?entry=ttu"
-								target="_blank">Here
-							is some address</a></div>
-					</div>
-					<div class="contact__item">
-						<i class="icon-mail-alt"></i>
-						<div class="contact__text"><a href="mailto:somemail@hotmail.com<">somemail@hotmail.com</a></div>
-					</div>
-				</div>
-				<form action="" class="contact__form">
-					<input class="contact__name" placeholder="Full Name" type="text">
-					<input class="contact__email" placeholder="Email" type="email">
-					<input class="contact__number" placeholder="Number" type="number">
-					<textarea class="contact__textarea" id="" name=""
-					          placeholder="Write your Message here..."></textarea>
-					<input class="contact__button" type="submit" value="Submit"></input>
-				</form>
+			<div class="provide__item">
+				<i class="icon-heart-empty"></i>
+				<h3 class="provide__item-title">We provide you love</h3>
+				<p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada
+					justo</p>
 			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="footer__text">
-				Copyright &copy; Kenan Hamidic. All rights reserved.
+			<div class="provide__item">
+				<i class="icon-publish"></i>
+				<h3 class="provide__item-title">And Some Cloud</h3>
+				<p class="provide__item-text">Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada
+					justo</p>
 			</div>
 		</div>
 	</div>
 </div>
+
+<div class="contact" id="contact">
+	<div class="container">
+		<div class="block__head">
+			<h2 class="block__title">Contact Us</h2>
+			<p class="block__text">We know what we need to do</p>
+		</div>
+		<div class="contact__inner">
+			<div class="contact__icon-box">
+				<div class="contact__item">
+					<i class="icon-phone"></i>
+					<div class="contact__text"><a href="tel:555222333">555-222-333</a></div>
+				</div>
+				<div class="contact__item">
+					<i class="icon-location"></i>
+					<div class="contact__text"><a
+							href="https://www.google.com/maps/place/%D0%93%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D0%B0+%C2%AB%D0%91%D0%B0%D1%80%D0%BD%D0%B0%D1%83%D0%BB%C2%BB/@53.3443723,83.7207879,14.11z/data=!4m9!3m8!1s0x42dda45d37ef3ab9:0x9479ac28f423d633!5m2!4m1!1i2!8m2!3d53.3473778!4d83.7623062!16s%2Fg%2F11g_t27yd?entry=ttu"
+							target="_blank">Here
+						is some address</a></div>
+				</div>
+				<div class="contact__item">
+					<i class="icon-mail-alt"></i>
+					<div class="contact__text"><a href="mailto:somemail@hotmail.com<">somemail@hotmail.com</a></div>
+				</div>
+			</div>
+			<form action="" class="contact__form">
+				<input class="contact__name" placeholder="Full Name" type="text">
+				<input class="contact__email" placeholder="Email" type="email">
+				<input class="contact__number" placeholder="Number" type="number">
+				<textarea class="contact__textarea" id="" name=""
+				          placeholder="Write your Message here..."></textarea>
+				<input class="contact__button" type="submit" value="Submit"></input>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="container">
+		<div class="footer__text">
+			Copyright &copy; Kenan Hamidic. All rights reserved.
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
